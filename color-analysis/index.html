@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Analysis Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Find Your Best Colors</h1>
+    <div id="quiz">
+      <div class="step active" data-step="1">
+        <p>What is your hair color?</p>
+        <select id="hair">
+          <option value="blonde">Blonde</option>
+          <option value="brown">Brown</option>
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+        </select>
+        <button onclick="nextStep()">Next</button>
+      </div>
+
+      <div class="step" data-step="2">
+        <p>What is your eye color?</p>
+        <select id="eyes">
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="brown">Brown</option>
+          <option value="hazel">Hazel</option>
+        </select>
+        <button onclick="nextStep()">Next</button>
+      </div>
+
+      <div class="step" data-step="3">
+        <p>What is your skin tone?</p>
+        <select id="skin">
+          <option value="fair">Fair</option>
+          <option value="medium">Medium</option>
+          <option value="olive">Olive</option>
+          <option value="dark">Dark</option>
+        </select>
+        <button onclick="showResult()">Show My Colors</button>
+      </div>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Your Best Color Palette:</h2>
+      <p id="palette"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
