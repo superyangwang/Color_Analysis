@@ -1,92 +1,92 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: linear-gradient(to right, #ff6f61, #ffcc70);
-  color: #333;
-}
-
-header {
-  text-align: center;
+.hero-section {
   padding: 2rem;
+  background: linear-gradient(to right, #ff6f61, #ffcc70);
   color: white;
+  text-align: center;
 }
 
-h1 {
+.hero-header h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.subtitle {
-  font-size: 1.2rem;
+.cta-button {
+  background-color: #ffcc00;
+  color: black;
   font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-.main-image {
-  display: block;
-  margin: 2rem auto;
-  max-width: 90%;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+.palette-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-.description {
+.palette {
   background: white;
-  padding: 2rem;
-  margin: 2rem;
+  color: #333;
+  padding: 1rem;
   border-radius: 10px;
+  width: 200px;
 }
 
-.description h2 {
+.palette h3 {
+  margin-bottom: 0.5rem;
   color: #ff6f61;
 }
 
-.description ul {
-  list-style: none;
-  padding: 0;
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
 }
 
-.description li {
-  margin-bottom: 1rem;
+.swatches div {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 4px;
 }
 
-.buttons {
-  text-align: center;
-  margin: 2rem;
-}
+/* Color palettes */
+.spring div { background-color: #ffb6b9; }
+.spring div:nth-child(2) { background-color: #ffe066; }
+.spring div:nth-child(3) { background-color: #c1fba4; }
+.spring div:nth-child(4) { background-color: #a0e7e5; }
+.spring div:nth-child(5) { background-color: #fcd5ce; }
+.spring div:nth-child(6) { background-color: #ff9a8b; }
+.spring div:nth-child(7) { background-color: #f4a261; }
+.spring div:nth-child(8) { background-color: #ffdab9; }
 
-button {
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  margin: 1rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
+.summer div { background-color: #f4c2c2; }
+.summer div:nth-child(2) { background-color: #dcd6f7; }
+.summer div:nth-child(3) { background-color: #aec6cf; }
+.summer div:nth-child(4) { background-color: #b2ebf2; }
+.summer div:nth-child(5) { background-color: #c1d3e0; }
+.summer div:nth-child(6) { background-color: #e6b0aa; }
+.summer div:nth-child(7) { background-color: #c3bef0; }
+.summer div:nth-child(8) { background-color: #ffb3c6; }
 
-button:hover {
-  background-color: #e85c50;
-}
+.autumn div { background-color: #d62828; }
+.autumn div:nth-child(2) { background-color: #f77f00; }
+.autumn div:nth-child(3) { background-color: #fcbf49; }
+.autumn div:nth-child(4) { background-color: #a1c181; }
+.autumn div:nth-child(5) { background-color: #6a994e; }
+.autumn div:nth-child(6) { background-color: #bc6c25; }
+.autumn div:nth-child(7) { background-color: #8d6e63; }
+.autumn div:nth-child(8) { background-color: #5e503f; }
 
-.modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6);
-}
-
-.modal-content {
-  background-color: white;
-  margin: 10% auto;
-  padding: 2rem;
-  width: 300px;
-  border-radius: 10px;
-}
-
-.close {
-  float: right;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+.winter div { background-color: #ff007f; }
+.winter div:nth-child(2) { background-color: #8a2be2; }
+.winter div:nth-child(3) { background-color: #4169e1; }
+.winter div:nth-child(4) { background-color: #0f4c81; }
+.winter div:nth-child(5) { background-color: #003366; }
+.winter div:nth-child(6) { background-color: #00bcd4; }
+.winter div:nth-child(7) { background-color: #000000; }
+.winter div:nth-child(8) { background-color: #4b0082; }

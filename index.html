@@ -1,50 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Color Analysis</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Color Analysis</h1>
+<main class="hero-section">
+  <div class="hero-header">
+    <h1>COLOR ANALYSIS</h1>
     <p class="subtitle">Discover your perfect palette – it's free!</p>
-  </header>
+    <button class="cta-button" onclick="location.href='test.html'">FREE COLOR ANALYSIS</button>
+  </div>
 
-  <main>
-    <img src="color analysis.png" alt="Color Analysis Example" class="main-image" />
-
-    <section class="description">
-      <h2>🎨 Core Purposes of Color Analysis</h2>
-      <ul>
-        <li><strong>Enhance Personal Appearance</strong><br>Wearing colors that suit your undertone and contrast level can make your skin look brighter, eyes more vivid, and overall appearance more polished.</li>
-        <li><strong>Simplify Decision-Making</strong><br>Once you know your palette (e.g. Summer, Autumn, etc.), shopping and styling become faster and more intuitive. You avoid trial-and-error purchases.</li>
-        <li><strong>Boost Emotional Impact</strong><br>When combined with color psychology, you can choose colors that support your mood or goals—like wearing blue for calmness or red for confidence.</li>
-        <li><strong>Save Time and Money</strong><br>You stop buying clothes or makeup that don’t work for you, reducing clutter and waste.</li>
-        <li><strong>Create Cohesive Style or Branding</strong><br>Whether for personal style or web design, color analysis helps build a consistent visual identity that resonates with your audience or reflects your personality.</li>
-      </ul>
-    </section>
-
-    <div class="buttons">
-      <button onclick="showLogin()">Login</button>
-      <a href="test.html"><button>Free Color Test</button></a>
+  <div class="palette-grid">
+    <div class="palette">
+      <h3>SPRING</h3>
+      <div class="swatches spring"></div>
     </div>
-  </main>
-
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="hideLogin()">&times;</span>
-      <h2>Login</h2>
-      <form>
-        <label>Email:</label><input type="email" required />
-        <label>Password:</label><input type="password" required />
-        <button type="submit">Login</button>
-        <p>Don't have an account? <a href="#">Create one</a></p>
-      </form>
+    <div class="palette">
+      <h3>SUMMER</h3>
+      <div class="swatches summer"></div>
+    </div>
+    <div class="palette">
+      <h3>AUTUMN</h3>
+      <div class="swatches autumn"></div>
+    </div>
+    <div class="palette">
+      <h3>WINTER</h3>
+      <div class="swatches winter"></div>
     </div>
   </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <section class="description">
+    <h2>🎨 Core Purposes of Color Analysis</h2>
+    <ul>
+      <li><strong>Enhance Personal Appearance</strong><br>Wearing colors that suit your undertone and contrast level can make your skin look brighter, eyes more vivid, and overall appearance more polished.</li>
+      <li><strong>Simplify Decision-Making</strong><br>Once you know your palette (e.g. Summer, Autumn, etc.), shopping and styling become faster and more intuitive. You avoid trial-and-error purchases.</li>
+      <li><strong>Boost Emotional Impact</strong><br>When combined with color psychology, you can choose colors that support your mood or goals—like wearing blue for calmness or red for confidence.</li>
+      <li><strong>Save Time and Money</strong><br>You stop buying clothes or makeup that don’t work for you, reducing clutter and waste.</li>
+      <li><strong>Create Cohesive Style or Branding</strong><br>Whether for personal style or web design, color analysis helps build a consistent visual identity that resonates with your audience or reflects your personality.</li>
+    </ul>
+  </section>
+</main>
