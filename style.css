@@ -1,13 +1,20 @@
-.hero-section {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff6f61, #ffcc70);
+  color: #333;
+}
+
+.hero {
+  text-align: center;
   padding: 2rem;
   background: linear-gradient(to right, #ff6f61, #ffcc70);
   color: white;
-  text-align: center;
 }
 
-.hero-header h1 {
+.hero h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .cta-button {
@@ -18,28 +25,44 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
-.palette-grid {
+.main-content {
+  padding: 2rem;
+}
+
+.image-and-palettes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.portrait img {
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.palettes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .palette {
   background: white;
-  color: #333;
   padding: 1rem;
   border-radius: 10px;
-  width: 200px;
+  width: 180px;
+  text-align: center;
 }
 
 .palette h3 {
-  margin-bottom: 0.5rem;
   color: #ff6f61;
+  margin-bottom: 0.5rem;
 }
 
 .swatches {
@@ -90,3 +113,25 @@
 .winter div:nth-child(6) { background-color: #00bcd4; }
 .winter div:nth-child(7) { background-color: #000000; }
 .winter div:nth-child(8) { background-color: #4b0082; }
+
+.description {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.description h2 {
+  color: #ff6f61;
+  margin-bottom: 1rem;
+}
+
+.description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.description li {
+  margin-bottom: 1rem;
+}
