@@ -1,137 +1,71 @@
 body {
-  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #ff6f61, #ffcc70);
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
   color: #333;
 }
 
-.hero {
+header {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(to right, #ff6f61, #ffcc70);
-  color: white;
+  background: linear-gradient(to right, #f9d976, #f39f86);
 }
 
-.hero h1 {
-  font-size: 3rem;
+h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.cta-button {
-  background-color: #ffcc00;
-  color: black;
-  font-weight: bold;
-  padding: 1rem 2rem;
+#cta-button {
+  background-color: #ffd700;
   border: none;
-  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  border-radius: 8px;
 }
 
-.main-content {
+#palettes {
   padding: 2rem;
-}
-
-.image-and-palettes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.portrait img {
-  max-width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-.palettes {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.palette {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 180px;
   text-align: center;
 }
 
-.palette h3 {
-  color: #ff6f61;
-  margin-bottom: 0.5rem;
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.palette {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 .swatches {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 5px;
+  margin-top: 0.5rem;
 }
 
 .swatches div {
-  width: 100%;
-  padding-top: 100%;
+  height: 30px;
   border-radius: 4px;
 }
 
-/* Color palettes */
-.spring div { background-color: #ffb6b9; }
-.spring div:nth-child(2) { background-color: #ffe066; }
-.spring div:nth-child(3) { background-color: #c1fba4; }
-.spring div:nth-child(4) { background-color: #a0e7e5; }
-.spring div:nth-child(5) { background-color: #fcd5ce; }
-.spring div:nth-child(6) { background-color: #ff9a8b; }
-.spring div:nth-child(7) { background-color: #f4a261; }
-.spring div:nth-child(8) { background-color: #ffdab9; }
-
-.summer div { background-color: #f4c2c2; }
-.summer div:nth-child(2) { background-color: #dcd6f7; }
-.summer div:nth-child(3) { background-color: #aec6cf; }
-.summer div:nth-child(4) { background-color: #b2ebf2; }
-.summer div:nth-child(5) { background-color: #c1d3e0; }
-.summer div:nth-child(6) { background-color: #e6b0aa; }
-.summer div:nth-child(7) { background-color: #c3bef0; }
-.summer div:nth-child(8) { background-color: #ffb3c6; }
-
-.autumn div { background-color: #d62828; }
-.autumn div:nth-child(2) { background-color: #f77f00; }
-.autumn div:nth-child(3) { background-color: #fcbf49; }
-.autumn div:nth-child(4) { background-color: #a1c181; }
-.autumn div:nth-child(5) { background-color: #6a994e; }
-.autumn div:nth-child(6) { background-color: #bc6c25; }
-.autumn div:nth-child(7) { background-color: #8d6e63; }
-.autumn div:nth-child(8) { background-color: #5e503f; }
-
-.winter div { background-color: #ff007f; }
-.winter div:nth-child(2) { background-color: #8a2be2; }
-.winter div:nth-child(3) { background-color: #4169e1; }
-.winter div:nth-child(4) { background-color: #0f4c81; }
-.winter div:nth-child(5) { background-color: #003366; }
-.winter div:nth-child(6) { background-color: #00bcd4; }
-.winter div:nth-child(7) { background-color: #000000; }
-.winter div:nth-child(8) { background-color: #4b0082; }
-
-.description {
-  background: white;
+#purposes {
   padding: 2rem;
-  border-radius: 10px;
-  max-width: 800px;
-  margin: auto;
+  background-color: #f0f8ff;
 }
 
-.description h2 {
-  color: #ff6f61;
-  margin-bottom: 1rem;
-}
-
-.description ul {
+ul {
   list-style: none;
   padding: 0;
 }
 
-.description li {
+li {
   margin-bottom: 1rem;
 }

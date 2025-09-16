@@ -7,44 +7,40 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>COLOR ANALYSIS</h1>
-    <button class="cta-button" onclick="location.href='test.html'">FREE COLOR ANALYSIS</button>
+    <button id="cta-button">FREE COLOR ANALYSIS</button>
   </header>
 
-  <section class="main-content">
-    <div class="image-and-palettes">
-      <div class="portrait">
-        <img src="create a vivid lands.png" alt="Color Analysis Model" />
+  <section id="palettes">
+    <h2>Seasonal Color Palettes</h2>
+    <div class="palette-grid">
+      <div class="palette" id="spring">
+        <h3>Spring</h3>
+        <div class="swatches"></div>
       </div>
-      <div class="palettes">
-        <div class="palette">
-          <h3>SPRING</h3>
-          <div class="swatches spring"></div>
-        </div>
-        <div class="palette">
-          <h3>SUMMER</h3>
-          <div class="swatches summer"></div>
-        </div>
-        <div class="palette">
-          <h3>AUTUMN</h3>
-          <div class="swatches autumn"></div>
-        </div>
-        <div class="palette">
-          <h3>WINTER</h3>
-          <div class="swatches winter"></div>
-        </div>
+      <div class="palette" id="summer">
+        <h3>Summer</h3>
+        <div class="swatches"></div>
+      </div>
+      <div class="palette" id="autumn">
+        <h3>Autumn</h3>
+        <div class="swatches"></div>
+      </div>
+      <div class="palette" id="winter">
+        <h3>Winter</h3>
+        <div class="swatches"></div>
       </div>
     </div>
+  </section>
 
-    <div class="description">
-      <h2>🎨 Core Purposes of Color Analysis</h2>
-      <ul>
-        <li><strong>Enhance Personal Appearance</strong> Wearing colors that suit your undertone and contrast level can make your skin look brighter, eyes more vivid and overall appearance more polished.</li>
-        <li><strong>Simplify Decision-Making</strong> Once you know your palette (e.g. Summer, Autumn, etc.), shopping and styling become faster and more intuitive. You avoid trial-and-error purchases.</li>
-        <li><strong>Boost Emotional Impact</strong> When combined with your style, colors can support your mood or goals—like wearing blue for calmness or red for confidence.</li>
-      </ul>
-    </div>
+  <section id="purposes">
+    <h2>Core Purposes of Color Analysis</h2>
+    <ul>
+      <li><strong>Enhance Personal Appearance:</strong> Brighten skin, eyes, and overall look.</li>
+      <li><strong>Simplify Decision-Making:</strong> Shop and style with confidence.</li>
+      <li><strong>Boost Emotional Impact:</strong> Use color to support mood and goals.</li>
+    </ul>
   </section>
 
   <script src="script.js"></script>
