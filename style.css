@@ -1,30 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f7f7f7;
-    margin: 0;
-    padding: 20px;
-  }
-  .container {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  h1, h2 {
-    text-align: center;
-  }
-  .step {
-    display: none;
-  }
-  .step.active {
-    display: block;
-  }
-  .hidden {
-    display: none;
-  }
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-  }
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #ff6f61, #ffcc70);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-image {
+  display: block;
+  margin: 2rem auto;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.description {
+  background: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.description h2 {
+  color: #ff6f61;
+}
+
+.description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.description li {
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  text-align: center;
+  margin: 2rem;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e85c50;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

@@ -3,50 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Color Analysis Quiz</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Color Analysis</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Find Your Best Colors</h1>
-    <div id="quiz">
-      <div class="step active" data-step="1">
-        <p>What is your hair color?</p>
-        <select id="hair">
-          <option value="blonde">Blonde</option>
-          <option value="brown">Brown</option>
-          <option value="black">Black</option>
-          <option value="red">Red</option>
-        </select>
-        <button onclick="nextStep()">Next</button>
-      </div>
+  <header>
+    <h1>Color Analysis</h1>
+    <p class="subtitle">Discover your perfect palette – it's free!</p>
+  </header>
 
-      <div class="step" data-step="2">
-        <p>What is your eye color?</p>
-        <select id="eyes">
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-          <option value="brown">Brown</option>
-          <option value="hazel">Hazel</option>
-        </select>
-        <button onclick="nextStep()">Next</button>
-      </div>
+  <main>
+    <img src="color analysis.png" alt="Color Analysis Example" class="main-image" />
 
-      <div class="step" data-step="3">
-        <p>What is your skin tone?</p>
-        <select id="skin">
-          <option value="fair">Fair</option>
-          <option value="medium">Medium</option>
-          <option value="olive">Olive</option>
-          <option value="dark">Dark</option>
-        </select>
-        <button onclick="showResult()">Show My Colors</button>
-      </div>
+    <section class="description">
+      <h2>🎨 Core Purposes of Color Analysis</h2>
+      <ul>
+        <li><strong>Enhance Personal Appearance</strong><br>Wearing colors that suit your undertone and contrast level can make your skin look brighter, eyes more vivid, and overall appearance more polished.</li>
+        <li><strong>Simplify Decision-Making</strong><br>Once you know your palette (e.g. Summer, Autumn, etc.), shopping and styling become faster and more intuitive. You avoid trial-and-error purchases.</li>
+        <li><strong>Boost Emotional Impact</strong><br>When combined with color psychology, you can choose colors that support your mood or goals—like wearing blue for calmness or red for confidence.</li>
+        <li><strong>Save Time and Money</strong><br>You stop buying clothes or makeup that don’t work for you, reducing clutter and waste.</li>
+        <li><strong>Create Cohesive Style or Branding</strong><br>Whether for personal style or web design, color analysis helps build a consistent visual identity that resonates with your audience or reflects your personality.</li>
+      </ul>
+    </section>
+
+    <div class="buttons">
+      <button onclick="showLogin()">Login</button>
+      <a href="test.html"><button>Free Color Test</button></a>
     </div>
+  </main>
 
-    <div id="result" class="hidden">
-      <h2>Your Best Color Palette:</h2>
-      <p id="palette"></p>
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="hideLogin()">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label><input type="email" required />
+        <label>Password:</label><input type="password" required />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="#">Create one</a></p>
+      </form>
     </div>
   </div>
 
