@@ -1,48 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Color Analysis</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Seasonal Color Analysis</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>COLOR ANALYSIS</h1>
-    <button id="cta-button">FREE COLOR ANALYSIS</button>
-  </header>
-
-  <section id="palettes">
-    <h2>Seasonal Color Palettes</h2>
-    <div class="palette-grid">
-      <div class="palette" id="spring">
-        <h3>Spring</h3>
-        <div class="swatches"></div>
-      </div>
-      <div class="palette" id="summer">
-        <h3>Summer</h3>
-        <div class="swatches"></div>
-      </div>
-      <div class="palette" id="autumn">
-        <h3>Autumn</h3>
-        <div class="swatches"></div>
-      </div>
-      <div class="palette" id="winter">
-        <h3>Winter</h3>
-        <div class="swatches"></div>
-      </div>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="/">Color Analysis</a>
+        <nav class="main-nav" aria-label="Primary Navigation">
+            <a href="index.html" class="nav-link" id="tab-color">Color Analysis</a>
+            <a href="results.html" class="nav-link" id="tab-results">Results</a>
+            <a href="styling.html" class="nav-link" id="tab-styling">Styling</a>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
     </div>
-  </section>
+</header>
 
-  <section id="purposes">
-    <h2>Core Purposes of Color Analysis</h2>
-    <ul>
-      <li><strong>Enhance Personal Appearance:</strong> Brighten skin, eyes, and overall look.</li>
-      <li><strong>Simplify Decision-Making:</strong> Shop and style with confidence.</li>
-      <li><strong>Boost Emotional Impact:</strong> Use color to support mood and goals.</li>
-    </ul>
-  </section>
+<main>
+    <section class="hero" aria-label="Seasonal color hero">
+        <div class="hero-left">
+            <img src="color analysis.png" alt="Woman with seasonal color palettes" class="hero-img" />
+        </div>
 
-  <script src="script.js"></script>
+        <div class="hero-right hero-overlay" role="region" aria-labelledby="hero-heading">
+            <h1 id="hero-heading" class="hero-title">Efficient shopping and wardrobe</h1>
+
+            <div class="feature-block">
+                <h2 class="block-title">Saves time and money</h2>
+                <p>By knowing your palette, you can quickly identify and purchase items that work for you and easily walk away from those that don't, making shopping less stressful and more cost-effective.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2 class="block-title">Creates a cohesive wardrobe</h2>
+                <p>A color analysis helps you build a wardrobe where most items can be mixed and matched, reducing decision fatigue and creating more outfit combinations with fewer pieces.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2 class="block-title">Simplifies travel</h2>
+                <p>Packing becomes easier and more efficient when your wardrobe is built around a coordinated palette.</p>
+            </div>
+
+            <hr class="divider" />
+
+            <h3 class="section-heading">Deeper personal understanding</h3>
+
+            <div class="feature-block">
+                <h2 class="block-title">It's more than just colors</h2>
+                <p>While it can help you look better, it can also help you understand how colors impact you psychologically and emotionally.</p>
+            </div>
+
+            <div class="feature-block">
+                <h2 class="block-title">Communicates your identity</h2>
+                <p>Your color choices can be a subtle but powerful way to communicate who you are.</p>
+            </div>
+
+            <a class="cta" href="results.html" role="button">Discover your palette</a>
+        </div>
+    </section>
+
+    <section class="content container">
+        <p class="note">Use the tabs above to explore more pages.</p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <small>© <span id="year"></span> Color Analysis</small>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', String(!expanded));
+            if (!expanded) {
+                nav.style.display = 'flex';
+                nav.style.flexDirection = 'column';
+            } else {
+                nav.style.display = '';
+                nav.style.flexDirection = '';
+            }
+        });
+    }
+</script>
 </body>
 </html>
