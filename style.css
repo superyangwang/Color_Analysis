@@ -35,12 +35,12 @@ body {
 .brand { font-weight:800; color:var(--text); text-decoration:none; font-size:1.05rem; letter-spacing:0.2px; }
 
 /* Big horizontal tabs */
-.main-nav { display:flex; gap:18px; align-items:center; }
+.main-nav { display:flex; gap:20px; align-items:center; }
 .nav-link {
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    padding:14px 20px;
+    padding:12px 18px; /*14px 20px;*/
     font-size:1.05rem;
     font-weight:700;
     color:var(--text);
@@ -48,14 +48,34 @@ body {
     border-radius:12px;
     background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.75));
     box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    transition: transform 160ms ease, box-shadow 160ms ease;
+    transition: all 0.2s ease; /*transform 160ms ease, box-shadow 160ms ease;*/
 }
-.nav-link:hover, .nav-link:focus {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+/*.nav-link:hover, .nav-link:focus {*/
+/*    transform: translateY(-3px);*/
+/*    box-shadow: 0 10px 30px rgba(0,0,0,0.12);*/
+/*    background: var(--accent);*/
+/*    color: #111;*/
+/*}*/
+.nav-link:hover,
+.nav-link.active {
     background: var(--accent);
     color: #111;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.auth-actions {
+    margin-left: auto; /* pushes login to far right */
+}
+
+.login-btn {
+    padding: 10px 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: var(--accent);
+    border: none;
+    cursor: pointer;
+}
+
 .menu-toggle { display:none; background:none; border:1px solid rgba(0,0,0,0.06); padding:8px 10px; border-radius:8px; }
 
 /* Hero: two columns (image left, text right) */
@@ -136,4 +156,19 @@ body {
     .hero-right { padding:18px; }
     .hero-title { font-size:1.5rem; text-align:left; }
     .nav-link { font-size:1rem; padding:10px 12px; }
+}
+.upload-section {
+    margin-top: 40px;
+    text-align: center;
+}
+.upload-section h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+.upload-section p {
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+.upload-section input[type="file"] {
+    margin-bottom: 16px;
 }

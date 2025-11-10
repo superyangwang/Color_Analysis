@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Color Analysis</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner container">
+        <a href="/" class="brand">MyColorSite</a>
+    </div>
+</header>
+
+<main class="container">
+    <section class="upload-section">
+        <h1>Upload Your Photo</h1>
+        <p>Please upload a clear picture of yourself to begin the color analysis.</p>
+
+        <form id="uploadForm">
+            <input type="file" id="photoInput" accept="image/*" required />
+            <button type="submit" class="cta">Start Analysis</button>
+        </form>
+
+        <div id="preview"></div>
+    </section>
+</main>
+<script>
+    const input = document.getElementById('photoInput');
+    const preview = document.getElementById('preview');
+
+    input.addEventListener('change', () => {
+        const file = input.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = e => {
+                preview.innerHTML = `<img src="${e.target.result}"
+                               alt="Preview"
+                               style="max-width:300px; margin-top:20px; border-radius:10px;" />`;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    document.getElementById('uploadForm').addEventListener('submit', e => {
+        e.preventDefault();
+        alert("Photo uploaded! Next step: run analysis.");
+        // Here you’d send the file to your backend or analysis function
+    });
+</script>
+</body>
+</html>
